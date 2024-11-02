@@ -1,0 +1,1 @@
+"args" : ["-opt", "options/test/REDS/NAFNet-width64.yml", "--input_path", "./demo/blurry.jpg", "--output_path", "./demo/deblur_img.png"]

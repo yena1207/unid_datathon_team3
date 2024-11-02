@@ -92,6 +92,9 @@ def parse(opt_path, is_train=True):
         opt['path']['results_root'] = results_root
         opt['path']['log'] = results_root
         opt['path']['visualization'] = osp.join(results_root, 'visualization')
+        
+    # 'dist' 키 추가
+    opt['dist'] = False  # 분산 학습을 사용하지 않도록 설정
 
     return opt
 

@@ -7,6 +7,7 @@
 import importlib
 from os import path as osp
 
+
 from basicsr.utils import get_root_logger, scandir
 
 # automatically scan and import model modules
@@ -30,8 +31,8 @@ def create_model(opt):
     Args:
         opt (dict): Configuration. It constains:
             model_type (str): Model type.
-    """
-    model_type = opt['model_type']
+    """    
+    model_type = opt['model_type'] # DEBUG
 
     # dynamic instantiation
     for module in _model_modules:
